@@ -11,6 +11,6 @@ public class WebController {
 	
     @GetMapping
     public String index() {
-        return "index";
+        return "index.html";
     }
 }
