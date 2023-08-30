@@ -41,7 +41,7 @@ public class UserService {
 	}
 	
 	public ResponseEntity<String> deleteUser(int id){
-		if(!repository.findById(id).isEmpty()) {
+		if(repository.findById(id) != null) {
 			repository.deleteById(id);
 			return ResponseEntity.status(HttpStatus.OK).body("Usuário Deletado");
 		} else {
