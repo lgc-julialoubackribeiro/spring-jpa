@@ -1,0 +1,128 @@
+31/08/23 10:22 [http-nio-8080-exec-2]  INFO UserService.java:25 – Create User - com.exercicio.crud.model.User@10ae16c
+31/08/23 10:23 [http-nio-8080-exec-2]  INFO UserService.java:25 – Create User - User [id=0, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 10:23 [http-nio-8080-exec-3]  INFO UserService.java:25 – Create User - User [id=0, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 10:25 [http-nio-8080-exec-1]  INFO UserService.java:26 – Create User - User [id=7, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 10:26  INFO UserService.java:26 – Create User - User [id=8, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 10:26  INFO UserService.java:26 – Create User - User [id=9, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 11:11  INFO UserService.java:32 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=3, name=Luciano Ribeiro, email=Clarice@gmail.com], User [id=4, name=Julia Ribeiro, email=julia@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 11:12  INFO UserService.java:26 – Created User - User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com]
+31/08/23 11:12  INFO UserService.java:50 – Updated User (4 ) - Optional[User [id=4, name=Julia Louback, email=julia@gmail.com]]
+31/08/23 11:13  INFO UserService.java:32 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=3, name=Luciano Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia Louback, email=julia@gmail.com]]
+31/08/23 11:14  INFO UserService.java:38 – Get User By Id (3) - Optional[User [id=3, name=Luciano Ribeiro, email=Clarice@gmail.com]]
+31/08/23 11:14  INFO UserService.java:38 – Get User By Id (4) - Optional[User [id=4, name=Julia Louback, email=julia@gmail.com]]
+31/08/23 11:14  INFO UserService.java:50 – Updated User (4) - Optional[User [id=4, name=Julia L Ribeiro, email=julia@gmail.com]]
+31/08/23 11:15  INFO UserService.java:38 – Get User By Id (4) - Optional[User [id=4, name=Julia L Ribeiro, email=julia@gmail.com]]
+31/08/23 11:15  INFO UserService.java:58 – Deleted User (3) - Optional[User [id=3, name=Luciano Ribeiro, email=Clarice@gmail.com]]
+31/08/23 11:15  INFO UserService.java:32 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com]]
+31/08/23 11:15  INFO UserService.java:38 – Get User By Id (3) - Optional.empty
+31/08/23 11:16  INFO UserService.java:38 – Get User By Id (1) - Optional[User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com]]
+31/08/23 12:10  INFO UserService.java:27 – Created User - User [id=11, name=Julia L Ribeiro, email=julia@gmail.com]
+31/08/23 12:35  INFO UserService.java:37 – Get User By Id (1) - Optional[User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com]]
+31/08/23 12:35  INFO UserService.java:37 – Get User By Id (1) - Optional[User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com]]
+31/08/23 12:35  INFO UserService.java:31 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribeiro, email=julia@gmail.com]]
+31/08/23 12:35  INFO UserService.java:37 – Get User By Id (2) - Optional.empty
+31/08/23 12:35  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 12:36  INFO UserService.java:25 – Created User - User [id=12, name=Julia L Ribeiro, email=julia@gmail.com]
+31/08/23 12:36  INFO UserService.java:49 – Updated User (11) - Optional[User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com]]
+31/08/23 14:07  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 14:07  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 14:07  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 14:07  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 14:07  INFO UserService.java:37 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 14:24  INFO UserService.java:25 – Created User - User [id=13, name=Teste, email=teste@gmail.com]
+31/08/23 14:41  INFO UserService.java:25 – Created User - User [id=14, name=Teste, email=null]
+31/08/23 14:41  INFO UserService.java:25 – Created User - User [id=15, name=Teste, email=teste@gmail.com]
+31/08/23 14:43  INFO UserService.java:25 – Created User - User [id=17, name=Teste, email=teste@gmail.com]
+31/08/23 14:44  INFO UserService.java:25 – Created User - User [id=18, name=Teste, email=null]
+31/08/23 14:44  INFO UserService.java:25 – Created User - User [id=19, name=Teste, email=teste@gmail.com]
+31/08/23 14:45  INFO UserService.java:25 – Created User - User [id=21, name=Teste, email=teste@gmail.com]
+31/08/23 14:51  INFO UserService.java:25 – Created User - User [id=23, name=Teste, email=teste@gmail.com]
+31/08/23 14:52  INFO UserService.java:25 – Created User - User [id=24, name=Teste, email=email@gmail.com]
+31/08/23 14:52  INFO UserService.java:25 – Created User - User [id=25, name=Teste, email=teste@gmail.com]
+31/08/23 14:53  INFO UserService.java:25 – Created User - User [id=27, name=Teste, email=teste@gmail.com]
+31/08/23 14:54  INFO UserService.java:25 – Created User - User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com]
+31/08/23 15:01  INFO UserService.java:25 – Created User - User [id=31, name=Teste, email=teste@gmail.com]
+31/08/23 15:04 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:05 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:06 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:06 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:07 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:07  INFO UserService.java:25 – Created User - User [id=39, name=Teste, email=teste@gmail.com]
+31/08/23 15:08 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:08  INFO UserService.java:25 – Created User - User [id=41, name=Teste, email=teste@gmail.com]
+31/08/23 15:08  INFO UserService.java:36 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=23, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com]]
+31/08/23 15:10 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 15:10  INFO UserService.java:25 – Created User - User [id=43, name=Teste, email=teste@gmail.com]
+31/08/23 15:49  INFO CrudApplication.java:23 – Database connection valid = {}true
+31/08/23 16:04  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:17 ERROR CrudApplication.java:26 – Database error, connection valid = false - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+31/08/23 16:18  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:18  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:18  INFO UserService.java:36 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=23, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com], User [id=43, name=Teste, email=teste@gmail.com]]
+31/08/23 16:39  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:39  INFO UserService.java:36 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=23, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com], User [id=43, name=Teste, email=teste@gmail.com]]
+31/08/23 16:40  INFO UserService.java:52 – Updated User (23) - User [id=23, name=testeeee, email=julia@gmail.com]
+31/08/23 16:48  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:48  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 16:48  INFO UserService.java:25 – Created User - User [id=44, name=testeeeefinal, email=julia@gmail.com]
+31/08/23 16:49 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 16:50 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 16:55  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:03 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 17:08  INFO UserService.java:25 – Created User - User [id=48, name=Julia, email=julia@gmail.com]
+31/08/23 17:25  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:32  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:33  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:35  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:36  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:36  INFO UserService.java:41 – Get User By Id (2) - Optional.empty
+31/08/23 17:36  INFO UserService.java:35 – Get All User - [User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com], User [id=5, name=Julia Ribeiro, email=julia@gmail.com], User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=4, name=Julia L Ribeiro, email=julia@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com], User [id=43, name=Teste, email=teste@gmail.com], User [id=23, name=testeeee, email=julia@gmail.com], User [id=44, name=testeeeefinal, email=julia@gmail.com], User [id=48, name=Julia, email=julia@gmail.com]]
+31/08/23 17:36  INFO UserService.java:41 – Get User By Id (5) - Optional[User [id=5, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 17:36  INFO UserService.java:41 – Get User By Id (0) - Optional.empty
+31/08/23 17:37  INFO UserService.java:58 – Deleted User (5) - User [id=5, name=Julia Ribeiro, email=julia@gmail.com]
+31/08/23 17:39  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:41  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:41  INFO UserService.java:58 – Deleted User (4) - User [id=4, name=Julia L Ribeiro, email=julia@gmail.com]
+31/08/23 17:43  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:44  INFO UserService.java:58 – Deleted User (1) - User [id=1, name=Julia Ribeiro, email=Clarice@gmail.com]
+31/08/23 17:48  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:48  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:52  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:53  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:54  INFO UserService.java:35 – Get All User - [User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com], User [id=43, name=Teste, email=teste@gmail.com], User [id=23, name=testeeee, email=julia@gmail.com], User [id=44, name=testeeeefinal, email=julia@gmail.com], User [id=48, name=Julia, email=julia@gmail.com]]
+31/08/23 17:54  INFO UserService.java:41 – Get User By Id (1) - Optional.empty
+31/08/23 17:54  INFO UserService.java:41 – Get User By Id (6) - Optional[User [id=6, name=Julia Ribeiro, email=julia@gmail.com]]
+31/08/23 17:56  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:57  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:57  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:58  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:58  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 17:59  INFO UserService.java:35 – Get All User - [User [id=6, name=Julia Ribeiro, email=julia@gmail.com], User [id=7, name=Julia Ribeiro, email=julia@gmail.com], User [id=8, name=Julia Ribeiro, email=julia@gmail.com], User [id=9, name=Julia Ribeiro, email=julia@gmail.com], User [id=10, name=Clarice Ribeiro, email=clarice@gmail.com], User [id=12, name=Julia L Ribeiro, email=julia@gmail.com], User [id=11, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=13, name=Teste, email=teste@gmail.com], User [id=14, name=Teste, email=null], User [id=15, name=Teste, email=teste@gmail.com], User [id=17, name=Teste, email=teste@gmail.com], User [id=18, name=Teste, email=null], User [id=19, name=Teste, email=teste@gmail.com], User [id=21, name=Teste, email=teste@gmail.com], User [id=24, name=Teste, email=email@gmail.com], User [id=25, name=Teste, email=teste@gmail.com], User [id=27, name=Teste, email=teste@gmail.com], User [id=28, name=Julia L Ribwwweiro, email=julia@gmail.com], User [id=31, name=Teste, email=teste@gmail.com], User [id=39, name=Teste, email=teste@gmail.com], User [id=41, name=Teste, email=teste@gmail.com], User [id=43, name=Teste, email=teste@gmail.com], User [id=23, name=testeeee, email=julia@gmail.com], User [id=44, name=testeeeefinal, email=julia@gmail.com], User [id=48, name=Julia, email=julia@gmail.com]]
+31/08/23 18:03  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:03  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:09  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:10 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:11 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:11 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:11 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:11 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:11 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:12 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:12  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:12  INFO UserService.java:25 – Created User - User [id=56, name=julia@gmail.com, email=julia louback]
+31/08/23 18:13  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:13 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:14 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+31/08/23 18:14  INFO UserService.java:25 – Created User - User [id=59, name=julia louyfdgdf, email=julia@gmail.com]
+31/08/23 18:14  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:14  INFO UserService.java:25 – Created User - User [id=60, name=julia, email=julia@gmail.com]
+31/08/23 18:22  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:23  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:23  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:24  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:25  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:27  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:28  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 18:30  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 20:03  INFO CrudApplication.java:24 – Database connection valid = true
+31/08/23 20:09  INFO CrudApplication.java:24 – Database connection valid = true
