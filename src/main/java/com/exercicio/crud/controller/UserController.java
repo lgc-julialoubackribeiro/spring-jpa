@@ -3,6 +3,7 @@ package com.exercicio.crud.controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,38 +17,89 @@ import org.springframework.web.bind.annotation.RestController;
 import com.exercicio.crud.model.User;
 import com.exercicio.crud.service.UserService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 @RestController
-@RequestMapping({"/users"})
+@RequestMapping({"/users/"})
 public class UserController {
 	
+	@Autowired
 	private UserService userService;
 	
-	UserController(UserService userService){
-		this.userService = userService;
-	}
-	
-	@PostMapping
-	public User createUser(@RequestBody User user) {
+	@ApiOperation(value = "Criação de usuário")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Usuário criado"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@PostMapping(produces="application/json", consumes="application/json")
+	public ResponseEntity createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
 	
-	@GetMapping
+	@ApiOperation(value = "Lista de usuários")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Lista de usuários"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@GetMapping(produces="application/json")
 	public List<User> getUsers() {
 		return userService.getUsers();
 	}
 	
-	@GetMapping(path = {"/{id}"})
+	@ApiOperation(value = "Buscar usuário por Id")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Usuário encontrado"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@GetMapping(path = {"/{id}"}, produces="application/json")
 	public Optional<User> getUser(@PathVariable int id) {
 		return userService.getUser(id);
 	}
 	
-	@PutMapping(path = {"/{id}"})
-	public Optional<Object> updateUser(@PathVariable int id, @RequestBody User user) {
+	@ApiOperation(value = "Atualização de usuário")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Usuário deletado"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@PutMapping(path = {"/{id}"}, produces="application/json", consumes="application/json")
+	public ResponseEntity updateUser(@PathVariable int id, @RequestBody User user) {
 		return userService.updateUser(id, user);
 	}
 	
-	@DeleteMapping(path ={"/{id}"})
-	public ResponseEntity<String> deleteUser(@PathVariable int id) {
+	@ApiOperation(value = "Exclusão de usuário")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Usuário deletado"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@DeleteMapping(path ={"/{id}"}, produces="application/json")
+	public ResponseEntity deleteUser(@PathVariable int id) {
 		return userService.deleteUser(id);
 	}
 

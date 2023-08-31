@@ -1,11 +1,13 @@
 package com.exercicio.crud.model;
 
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_users")
@@ -15,9 +17,14 @@ public class User {
     @GeneratedValue
     private int id;
    
+    @NotNull
     @Column
+    @Size(min = 3, max = 50, message = "Nome deve possuir no mínimo 3 caracteres")
     private String name;
+    @NotNull
     @Column
+    @Email(message = "Email deve ser válido")
+    @Size(min = 10, max = 50, message = "Email deve possuir no mínimo 10 caracteres")
     private String email;
     
 	public int getId() {
@@ -47,6 +54,15 @@ public class User {
 		this.name = name;
 		this.email = email;
 	}
-    
-    
+	
+	public User(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", email=" + email + "]";
+	}
 }
