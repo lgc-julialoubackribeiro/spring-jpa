@@ -36,10 +36,11 @@ public class UserService {
 		return usuarios;
 	}
 
-	public Optional<User> getUser(int id) {
-		Optional<User> usuario = repository.findById(id);
-		logger.info("Get User By Id (" + id + ") - " + usuario.toString());
-		return usuario;
+	public ResponseEntity getUser(int id) {
+		return repository.findById(id).map(el -> {
+			logger.info("Get User By Id (" + id + ") - " + el.toString());
+			return ResponseEntity.ok().body(el);
+		}).orElse(ResponseEntity.notFound().build());
 	}
 
 	public ResponseEntity updateUser(int id, User user) {

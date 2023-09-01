@@ -2,6 +2,7 @@ package com.exercicio.crud.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -37,10 +38,6 @@ public class SwaggerConfig {
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .contact(new Contact("Julia Louback Ribeiro", "https://www.linkedin.com/in/julia-louback-ribeiro-181240150/", "julia.ribeiro@logicinfo.com"))
                 .build();
-    }
-    
-    public void addViewControllers(ViewControllerRegistry registry) {
-       registry.addRedirectViewController("/myproject", "/");
     }
 }	
 

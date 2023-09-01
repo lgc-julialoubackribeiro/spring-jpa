@@ -14,7 +14,6 @@ import javax.validation.constraints.Size;
 public class User {
 
     @Id
-    @GeneratedValue
     private int id;
    
     @NotNull
@@ -60,6 +59,7 @@ public class User {
 		this.name = name;
 		this.email = email;
 	}
+	
 	
 	@Override
 	public String toString() {

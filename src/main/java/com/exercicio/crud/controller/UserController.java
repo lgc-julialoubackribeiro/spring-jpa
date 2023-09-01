@@ -69,7 +69,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@GetMapping(path = {"/{id}"}, produces="application/json")
-	public Optional<User> getUser(@PathVariable int id) {
+	public ResponseEntity getUser(@PathVariable int id) {
 		return userService.getUser(id);
 	}
 	

@@ -1,7 +1,5 @@
 package com.exercicio.crud;
 
-import java.sql.SQLException;
-
 import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
