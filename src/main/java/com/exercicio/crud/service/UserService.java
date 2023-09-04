@@ -1,11 +1,9 @@
 package com.exercicio.crud.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +15,13 @@ public class UserService {
 
 	@Autowired
 	private UserRepository repository;
+	
+	@Autowired
 	Logger logger = Logger.getLogger("UserService.java");
 
-	public ResponseEntity createUser(User user) {
+	public ResponseEntity<Object> createUser(User user) {
 		try {
-			User usuario = repository.save(user);
+ 			User usuario = repository.save(user);
 			logger.info("Created User - " + usuario.toString());
 			return ResponseEntity.ok().body(usuario);
 		} catch (Exception e) {

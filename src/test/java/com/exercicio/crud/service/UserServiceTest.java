@@ -1,30 +1,35 @@
 package com.exercicio.crud.service;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
+
+import org.apache.log4j.Logger;
 import org.assertj.core.api.Assertions;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.core.annotation.Order;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.exercicio.crud.model.User;
 import com.exercicio.crud.repository.UserRepository;
 
-@SpringBootTest
-@RunWith(SpringRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(MockitoJUnitRunner.class)
 public class UserServiceTest {
 	
 	@Mock
 	private UserRepository repository;
+
+	@Mock
+	Logger logger = Logger.getLogger("UserService.java");
 	
-	@Autowired
+	@InjectMocks
 	private UserService userService;
 	
 	private User user = new User(500, "Julia", "julia@gmail.com");
@@ -34,7 +39,9 @@ public class UserServiceTest {
 	@Test
 	@Order(1)    
 	public void createUsers() {
-		//when(repository.save(user)).thenReturn(user);
+		when(repository.save(user)).thenReturn(user);
+		
+		
 		assertEquals(200, userService.createUser(user).getStatusCodeValue());
 	}
 	
@@ -46,6 +53,14 @@ public class UserServiceTest {
 	
 	@Test
 	public void getListUsers() {
+		
+		ArrayList<User> usuariosMock = new ArrayList<User>();
+		
+		usuariosMock.add(new User("joao", "joao@email.com"));
+		
+		when(repository.findAll()).thenReturn(usuariosMock);
+
+		
 		Assertions.assertThat(userService.getUsers().size()).isGreaterThan(0);
 	}
 	
