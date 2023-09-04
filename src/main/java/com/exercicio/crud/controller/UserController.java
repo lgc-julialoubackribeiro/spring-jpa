@@ -39,7 +39,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@PostMapping(produces="application/json", consumes="application/json")
-	public ResponseEntity createUser(@RequestBody User user) {
+	public ResponseEntity<Object> createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
 	
