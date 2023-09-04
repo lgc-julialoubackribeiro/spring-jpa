@@ -417,3 +417,5 @@
 01/09/23 17:24  INFO UserService.java:35 – Get All User - [User [id=2, name=Julia, email=julia@gmail.com], User [id=1, name=Julia, email=julia@gmail.com], User [id=10, name=Julia, email=julia@gmail.com], User [id=999, name=Julia, email=julia@gmail.com], User [id=4, name=Julia, email=julia@gmail.com]]
 01/09/23 17:24  INFO UserService.java:25 – Created User - User [id=500, name=Julia, email=julia@gmail.com]
 01/09/23 17:24 ERROR UserService.java:28 – User not created - Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+04/09/23 09:50  INFO CrudApplication.java:22 – Database connection valid = true
+04/09/23 09:51  INFO UserService.java:35 – Get All User - [User [id=2, name=Julia, email=julia@gmail.com], User [id=1, name=Julia, email=julia@gmail.com], User [id=10, name=Julia, email=julia@gmail.com], User [id=999, name=Julia, email=julia@gmail.com], User [id=4, name=Julia, email=julia@gmail.com], User [id=500, name=Julia, email=julia@gmail.com]]

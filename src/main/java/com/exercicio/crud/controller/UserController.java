@@ -75,7 +75,7 @@ public class UserController {
 	
 	@ApiOperation(value = "Atualização de usuário")	
 	@ApiResponses(value = {
-	    @ApiResponse(code = 200, message = "Usuário deletado"),
+	    @ApiResponse(code = 200, message = "Usuário atualizado"),
 	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
 	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
 	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
