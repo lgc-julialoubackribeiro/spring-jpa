@@ -1,7 +1,6 @@
 package com.exercicio.crud.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +38,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@PostMapping(produces="application/json", consumes="application/json")
-	public ResponseEntity<Object> createUser(@RequestBody User user) {
+	public ResponseEntity<User> createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
 	
@@ -69,7 +68,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@GetMapping(path = {"/{id}"}, produces="application/json")
-	public ResponseEntity getUser(@PathVariable int id) {
+	public ResponseEntity<User> getUser(@PathVariable int id) {
 		return userService.getUser(id);
 	}
 	
@@ -84,7 +83,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@PutMapping(path = {"/{id}"}, produces="application/json", consumes="application/json")
-	public ResponseEntity updateUser(@PathVariable int id, @RequestBody User user) {
+	public ResponseEntity<User> updateUser(@PathVariable int id, @RequestBody User user) {
 		return userService.updateUser(id, user);
 	}
 	
@@ -99,7 +98,7 @@ public class UserController {
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
 	@DeleteMapping(path ={"/{id}"}, produces="application/json")
-	public ResponseEntity deleteUser(@PathVariable int id) {
+	public ResponseEntity<User> deleteUser(@PathVariable int id) {
 		return userService.deleteUser(id);
 	}
 
