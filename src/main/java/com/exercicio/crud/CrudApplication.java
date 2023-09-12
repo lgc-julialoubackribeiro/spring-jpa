@@ -1,7 +1,5 @@
 package com.exercicio.crud;
 
-import javax.sql.DataSource;
-
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,15 +14,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class CrudApplication {
 	
 	Logger logger = Logger.getLogger("CrudApplication.java");
-	
-	public CrudApplication(DataSource dataSource){
-		try {
-			logger.info("Database connection valid = " + dataSource.getConnection().isValid(1000));
-		} catch (Exception e) {
-			logger.error("Database error, connection valid = false - " + e.getMessage());
-		}
-        
-    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(CrudApplication.class, args);
