@@ -452,3 +452,38 @@
 05/09/23 17:15  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com], User [id=4, name=Yoleli, email=yoo@gmail.com]]
 05/09/23 17:16  INFO CrudApplication.java:22 – Database connection valid = true
 05/09/23 17:17  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com]]
+11/09/23 08:54  INFO CrudApplication.java:22 – Database connection valid = true
+11/09/23 08:55  INFO CrudApplication.java:22 – Database connection valid = true
+11/09/23 09:09  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 10:49  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 10:50  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com], User [id=4, name=Yoleli, email=yoo@gmail.com], User [id=5, name=Julia, email=julia@gmail.com]]
+12/09/23 10:51  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 10:55  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:01  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:03  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:08  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:09  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:10  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:11  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:13  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:16  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:22  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:23  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:25  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 11:27  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 14:01  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 14:01  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com], User [id=4, name=Yoleli, email=yoo@gmail.com], User [id=5, name=Julia, email=julia@gmail.com]]
+12/09/23 14:02  INFO UserService.java:24 – Created User - User [id=1, name=Teste, email=teste@gmail.com]
+12/09/23 16:10  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 16:11  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com], User [id=4, name=Yoleli, email=yoo@gmail.com], User [id=5, name=Julia, email=julia@gmail.com], User [id=1, name=Teste, email=teste@gmail.com]]
+12/09/23 16:39  INFO CrudApplication.java:22 – Database connection valid = true
+12/09/23 16:46  INFO UserService.java:34 – Get All User - [User [id=3, name=Yoleli, email=yoo@gmail.com], User [id=4, name=Yoleli, email=yoo@gmail.com], User [id=5, name=Julia, email=julia@gmail.com], User [id=1, name=Teste, email=teste@gmail.com]]
+12/09/23 16:46  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 16:54  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 17:01  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 17:05  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 17:06  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 17:10  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+12/09/23 17:13  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
+13/09/23 09:18  INFO CrudApplication.java:22 – Database connection valid = true
+13/09/23 09:18  INFO UserService.java:40 – Get User By Id (3) - User [id=3, name=Yoleli, email=yoo@gmail.com]
