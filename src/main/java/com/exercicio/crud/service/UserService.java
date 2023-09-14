@@ -41,6 +41,16 @@ public class UserService {
 			return ResponseEntity.ok().body(el);
 		}).orElse(ResponseEntity.notFound().build());
 	}
+	
+	public ResponseEntity<User> getUserByEmail(String email) {
+		User user = repository.findByEmail(email);
+		
+		if(!user.equals(null)) {
+			 return ResponseEntity.ok().body(user);
+		} else {
+			 return ResponseEntity.badRequest().build();
+		}
+	}
 
 	public ResponseEntity<User> updateUser(int id, User user) {
 		return repository.findById(id).map(el -> {

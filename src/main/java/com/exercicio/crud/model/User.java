@@ -10,11 +10,14 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "tb_users")
 public class User {
     @Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @ApiModelProperty(readOnly = true)
     private int id;
    
     @NotNull

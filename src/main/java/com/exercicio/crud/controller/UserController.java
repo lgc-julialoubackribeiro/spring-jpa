@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exercicio.crud.model.User;
@@ -37,7 +38,7 @@ public class UserController {
 	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
 	    @ApiResponse(code = 500, message = "Exceção gerada"),
 	})
-	@PostMapping(produces="application/json", consumes="application/json")
+	@PostMapping(consumes="application/json", produces="application/json")
 	public ResponseEntity<User> createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
@@ -70,6 +71,21 @@ public class UserController {
 	@GetMapping(path = {"/{id}"}, produces="application/json")
 	public ResponseEntity<User> getUser(@PathVariable int id) {
 		return userService.getUser(id);
+	}
+	
+	@ApiOperation(value = "Buscar usuário por Email")	
+	@ApiResponses(value = {
+	    @ApiResponse(code = 200, message = "Usuário encontrado"),
+	    @ApiResponse(code = 204, message = "Nenhum conteúdo encontrado"),
+	    @ApiResponse(code = 400, message = "Requisição mal formatada"),
+	    @ApiResponse(code = 404, message = "Usuário não encontrado"),
+	    @ApiResponse(code = 401, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
+	    @ApiResponse(code = 500, message = "Exceção gerada"),
+	})
+	@GetMapping(value="/email",produces="application/json")
+	public ResponseEntity<User> getUserByEmail(@RequestParam(name = "email") String email) {
+		return userService.getUserByEmail(email);
 	}
 	
 	@ApiOperation(value = "Atualização de usuário")	
